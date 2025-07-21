@@ -1,505 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Bishisht Bhatta - Freelancer - Linux System Administrator, Full Stack Web Developer, Scrum Master</title>
-
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishisht Bhatta - Developer & Network Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Bishisht Bhatta</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
+            <a class="navbar-brand" href="#page-top">Bishisht</a>
+            <div style="display: flex; align-items: center;">
+                <ul class="nav-links">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">Bishisht Bhatta</span>
-                        <hr class="star-light">
-                        <span class="skills">Ruby - Linux - Cloud</span>
-                    </div>
+                <div class="theme-switcher">
+                    <label class="theme-switch">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fa fa-bars"></i>
                 </div>
             </div>
+        </div>
+    </nav>
+
+    <header id="page-top">
+        <div class="hero-content">
+            <img class="profile-img" src="img/profile.png" alt="Profile Picture">
+            <h1 class="name">Bishisht Bhatta</h1>
+            <p class="skills-text">Developer | Network Engineer | Adventurer</p>
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
+            <h2 class="scroll-animate">Featured Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item scroll-animate" style="transition-delay: 100ms;" data-modal-target="visitmeetModal">
+                    <img src="img/portfolio/visitmeet.svg" alt="VisitMeet Project">
+                    <div class="portfolio-caption">
+                        <h4>VisitMeet</h4>
+                        <p>A privacy-first social platform in Ruby on Rails for connecting professionals by location.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="">
-                    </a>
+                <div class="portfolio-item scroll-animate" style="transition-delay: 200ms;" data-modal-target="serverModal">
+                    <img src="img/portfolio/server.svg" alt="Self-hosted Server Project">
+                    <div class="portfolio-caption">
+                        <h4>Self-Hosted Infrastructure</h4>
+                        <p>A complete DevOps project utilizing Docker, Nginx, and robust system hardening.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="success" id="about">
+    <section id="skills">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
+            <h2 class="scroll-animate">Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill scroll-animate" style="transition-delay: 100ms;">
+                    <p>Fixed Wireless Broadband</p>
+                    <div class="progress"><div class="progress-bar" data-width="100"></div></div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>self taught developer with linux skills</p>
+                <div class="skill scroll-animate" style="transition-delay: 150ms;">
+                    <p>Linux System Administration</p>
+                    <div class="progress"><div class="progress-bar" data-width="85"></div></div>
                 </div>
-                <div class="col-lg-4">
-                    <p>Learning programming. Trying to develop something</p>
+                <div class="skill scroll-animate" style="transition-delay: 200ms;">
+                    <p>MikroTik & Network Engineering</p>
+                    <div class="progress"><div class="progress-bar" data-width="70"></div></div>
                 </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="http://www.github.com/bishisht" class="btn btn-lg btn-outline">
-                        <i class="fa fa-github"></i> GitHub
-                    </a>
-                    <a href="http://www.facebook.com/vishisht.np" class="btn btn-lg btn-outline">
-                        <i class="fa fa-facebook"></i> Facebook
-                    </a>
-                
-                    
-
+                <div class="skill scroll-animate" style="transition-delay: 250ms;">
+                    <p>Ruby on Rails</p>
+                    <div class="progress"><div class="progress-bar" data-width="50"></div></div>
+                </div>
+                <div class="skill scroll-animate" style="transition-delay: 300ms;">
+                    <p>Docker & Containerization</p>
+                    <div class="progress"><div class="progress-bar" data-width="50"></div></div>
+                </div>
+                <div class="skill scroll-animate" style="transition-delay: 350ms;">
+                    <p>AWS Cloud Services</p>
+                    <div class="progress"><div class="progress-bar" data-width="40"></div></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="scroll-animate">Professional Journey</h2>
+            <div style="max-width: 800px; margin: auto;">
+                <div class="experience-item scroll-animate">
+                    <h3>Founder & Lead Network Engineer</h3>
+                    <h4>Narmada Infosys</h4>
+                    <h5>Sept 2016 - Present | Far-Western Nepal</h5>
+                    <p>Pioneered internet connectivity in some of the world's most remote regions. This venture required engineering robust, off-grid wireless networks and managing extreme logistics, from multi-day treks for site surveys to deploying infrastructure on high-altitude towers. It was an exercise in resilience, blending advanced radio frequency engineering with raw perseverance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="scroll-animate">About Me</h2>
+            <div class="text-container scroll-animate">
+                <p>I am a builder at heart, driven by the challenge of solving complex problems—whether in code or on a mountainside. My unique journey has given me a deep foundation in building resilient, real-world systems from the ground up. I am now channeling that same passion into creating elegant, efficient, and scalable software solutions.</p>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                  <h3 class="text-center">bhattabishisht at_the_rate gmail dot com</h3>
-                  <h3 class="text-center">
-                </div>
-            </div>
+        <div class="container" style="text-align: center;">
+            <h2 class="scroll-animate">Let's Connect</h2>
+            <p class="text-container scroll-animate" style="margin-bottom: 2rem;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing. Feel free to reach out.</p>
+            <h3 class="scroll-animate" style="font-family: 'Inter', sans-serif; font-weight: 500; font-size: 1.5rem;">bhattabishisht@gmail.com</h3>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>New Bus Park<br>Aithpur, MNR, Nepal 10400</p>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="http://www.facebook.com/vishisht.np" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                            
-                            <li>
-                                <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h3>About Freelancer</h3>
-                        <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div>
-                </div>
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="http://www.github.com/bishisht" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/bishisht/" target="_blank"><i class="fa fa-fw fa-linkedin"></i></a>
+                <a href="http://www.facebook.com/vishisht.np" target="_blank"><i class="fa fa-fw fa-facebook"></i></a>
             </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        Copyright &copy; bishisht.github.io 2022
-                    </div>
-                </div>
+            <div class="footer-below">
+                Designed & Built by Bishisht Bhatta & Gemini &copy; 2025
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Modals -->
+    <div id="visitmeetModal" class="modal">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/game.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <span class="close-button">&times;</span>
+            <h2>VisitMeet — A Privacy-Conscious Social Connection Platform</h2>
+            <img src="img/portfolio/visitmeet.svg" alt="VisitMeet Project Image">
+            <h3>Overview:</h3>
+            <p>VisitMeet is a web application built using Ruby on Rails that helps people connect based on their professions and locations, without revealing personal contact details. Inspired by the need for a simpler, safer way to meet like-minded individuals—especially while traveling—VisitMeet allows users to discover and engage with others nearby through shared interests or professional backgrounds.</p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Users can tag themselves with profession and location tags.</li>
+                <li>Login with email or username for flexible authentication.</li>
+                <li>Focus on privacy: no phone numbers or emails are exposed.</li>
+                <li>Built-in CAPTCHA protection using reCAPTCHA v3 to prevent spam.</li>
+                <li>Designed with a clean, user-friendly interface.</li>
+            </ul>
+            <h3>Tech Stack:</h3>
+            <ul>
+                <li>Ruby on Rails 8 (updated from Rails 7.1)</li>
+                <li>PostgreSQL</li>
+                <li>Importmap for JavaScript asset management</li>
+                <li>Stimulus.js for reactive UI</li>
+                <li>Responsive design with custom CSS</li>
+            </ul>
+            <h3>Current Status:</h3>
+            <p>Under active development with a focus on refining user experience and strengthening privacy features. Planned features include tag-based search, activity preferences, and regional discovery.</p>
         </div>
     </div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <div id="serverModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Self-Hosted Linux Server with Dockerized Applications, Monitoring, and Security</h2>
+            <img src="img/portfolio/server.svg" alt="Self-Hosted Server Project Image">
+            <h3>Project Overview:</h3>
+            <p>Deployed and managed a self-hosted Ubuntu Server to demonstrate end-to-end infrastructure setup and maintenance using modern DevOps practices. This system hosts multiple production-grade applications using Docker, with Nginx for reverse proxy, system hardening tools, and automation scripts for reliability and performance.</p>
+            <h3>Infrastructure Setup:</h3>
+            <ul>
+                <li>Operating System: Ubuntu Server (Minimal Install)</li>
+                <li>Access Control: SSH with root login (secured via Fail2Ban and UFW)</li>
+                <li>Container Runtime: Docker + Docker Compose</li>
+                <li>Web Server: Nginx configured as a reverse proxy for containerized applications</li>
+            </ul>
+            <h3>Deployed Applications (via Docker Compose):</h3>
+            <ul>
+                <li>Uptime Kuma: Uptime monitoring dashboard for internal and external services/devices</li>
+                <li>NetBox: Infrastructure resource modeling and IP address management</li>
+                <li>EspoCRM: Lightweight CRM for multi-user access and container scalability</li>
+            </ul>
+            <h3>Security & Hardening:</h3>
+            <ul>
+                <li>UFW (Uncomplicated Firewall): Rules configured to allow only essential traffic (SSH, HTTP/HTTPS)</li>
+                <li>Fail2Ban: Automated blocking of IPs with multiple failed login attempts</li>
+            </ul>
+            <h3>Automation & Maintenance:</h3>
+            <ul>
+                <li>Maintenance Shell Script (Weekly via Cron): Tasks automated for log management and system cleanup.</li>
+                <li>Execution Time: Every Tuesday at 2:00 AM via crontab</li>
+            </ul>
+            <h3>Monitoring & Notifications:</h3>
+            <ul>
+                <li>Uptime Kuma Webhooks: Configured to send service downtime alerts through webhooks to Telegram</li>
+            </ul>
+            <h3>Tools & Technologies Used:</h3>
+            <ul>
+                <li>OS & Access: Ubuntu Server, SSH</li>
+                <li>Containers: Docker, Docker Compose</li>
+                <li>Reverse Proxy: Nginx</li>
+                <li>Monitoring: Uptime Kuma</li>
+                <li>CRM: EspoCRM</li>
+                <li>IPAM & Infra Doc: NetBox</li>
+                <li>Automation: Cron, Bash scripting</li>
+                <li>Security: UFW, Fail2Ban</li>
+                <li>Alerting: Webhook integrations</li>
+                <li>Version Control: Git</li>
+            </ul>
+            <h3>Outcome & Impact:</h3>
+            <ul>
+                <li>Built a secure, minimal server capable of running multiple Dockerized applications efficiently.</li>
+                <li>Demonstrated ability to provision, deploy, monitor, and maintain services in a resource-constrained environment.</li>
+                <li>Developed operational scripts and integrated reverse proxy and logging mechanisms.</li>
+                <li>Gained hands-on experience relevant to DevOps, infrastructure automation, and self-hosted solutions.</li>
+            </ul>
+        </div>
+    </div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script>
+        // jQuery vulnerability workaround
+        if (typeof jQuery !== 'undefined') {
+            jQuery.htmlPrefilter = function( html ) {
+                return html;
+            };
+        }
 
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('theme-toggle');
+            const body = document.body;
+            const mobileMenuToggle = document.getElementById('mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+            const applyTheme = (theme) => {
+                body.classList.toggle('dark-mode', theme === 'dark');
+                themeToggle.checked = theme === 'dark';
+            };
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
+            // Function to determine theme based on time
+            const getThemeBasedOnTime = () => {
+                const currentHour = new Date().getHours();
+                // Assuming daytime is 6 AM to 6 PM (18:00)
+                if (currentHour >= 6 && currentHour < 18) {
+                    return 'light';
+                } else {
+                    return 'dark';
+                }
+            };
+
+            // Check for saved theme in localStorage first
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                applyTheme(savedTheme);
+            } else {
+                // If no saved theme, apply based on time
+                applyTheme(getThemeBasedOnTime());
+            }
+
+            themeToggle.addEventListener('change', () => {
+                const newTheme = themeToggle.checked ? 'dark' : 'light';
+                localStorage.setItem('theme', newTheme);
+                applyTheme(newTheme);
+            });
+
+            mobileMenuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    navLinks.classList.remove('active'); // Close mobile menu on link click
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        if (entry.target.classList.contains('skill')) {
+                            const progressBar = entry.target.querySelector('.progress-bar');
+                            progressBar.style.width = progressBar.dataset.width + '%';
+                        }
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.scroll-animate').forEach(el => observer.observe(el));
+
+            // Modal functionality
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            const modals = document.querySelectorAll('.modal');
+            const closeButtons = document.querySelectorAll('.close-button');
+
+            portfolioItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const modalId = this.dataset.modalTarget;
+                    document.getElementById(modalId).style.display = 'block';
+                    document.body.style.overflow = 'hidden'; // Prevent scrolling behind modal
+                });
+            });
+
+            closeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    this.closest('.modal').style.display = 'none';
+                    document.body.style.overflow = ''; // Restore scrolling
+                });
+            });
+
+            modals.forEach(modal => {
+                window.addEventListener('click', function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
-
 </html>
